@@ -34,7 +34,7 @@ function Header() {
                     <li className='hover:underline hover:underline-offset-8 '><Link to={'/about'}>Contacto</Link></li>
                 </ul>
 
-                <aside className='flex gap-2 justify-center'>
+                <aside className='lg:flex gap-2 justify-center hidden'>
                     <div className='w-8 h-8 rounded-full bg-black'></div>
                     <div className='w-8 h-8 rounded-full bg-black'></div>
                     <div className='w-8 h-8 rounded-full bg-black'></div>
