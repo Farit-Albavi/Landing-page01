@@ -17,7 +17,7 @@ function Header() {
 
     return (
         <nav className='bg-[#ede7db] p-5 flex-row-reverse gap-5 lg:flex-row lg:justify-between lg:p-10 '>
-            <div className='flex flex-row-reverse justify-between'>
+            <div className='flex flex-row-reverse justify-between items-center'>
 
                 <h1 className='font-bold text-4xl text-center'>LANDING PAGE</h1>
 
