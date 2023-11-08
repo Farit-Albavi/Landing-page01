@@ -1,16 +1,18 @@
-import { useState } from 'react'
-import Header from '../components/Header'
+import React, { useState } from 'react'
 import Carousel from '../components/Carousel'
 import Item from '../components/Item'
-import Footer from '../components/Footer'
+import { Routes, Route } from 'react-router-dom'
+import About from '../views/About'
 
 
 function Home() {
   const [count, setCount] = useState(0)
 
+
+
   return (
+
     <>
-      <Header />
       <article className='overflow-hidden'>
         <Carousel />
       </article>
@@ -36,9 +38,13 @@ function Home() {
           <img src="" alt="" className='w-40 h-40 bg-black' />
           <img src="" alt="" className='w-40 h-40 bg-black' />
         </div>
+
       </article>
 
-      <Footer></Footer>
+
+      <Routes>
+        <Route path='/about' element={<About />} />
+      </Routes>
 
     </>
   )
