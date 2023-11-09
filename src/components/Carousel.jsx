@@ -34,10 +34,6 @@ function Carousel() {
         setCurrentIndex(newIndex)
     }
 
-    const goToSlide = (slideIndex) => {
-        setCurrentIndex(slideIndex)
-    }
-
     return (
         <div className='w-screen xl:w-screen xl:h-[540px] h-[400px] m-auto relative'>
             <div style={{ backgroundImage: `url(${slides[currentIndex].url})` }} className='w-full h-full xl:rounded-2xls bg-center bg-cover duration-500 '>
@@ -53,16 +49,6 @@ function Carousel() {
                     <BsChevronCompactRight onClick={nextSlide} size={30} ></BsChevronCompactRight>
                 </div >
 
-
-                <div className='flex justify-center py-2 absolute top-[95%] translate-y-[-50%] right-[50%] translate-x-[50%]'>
-                    {slides.map((slide, slideIndex) => (
-                        <div key={slideIndex}
-                            onClick={() => goToSlide(slideIndex)}
-                            className='text-2xl cursor-pointer '>
-                            <RxDotFilled color='black' />
-                        </div>
-                    ))}
-                </div>
             </div>
 
 
