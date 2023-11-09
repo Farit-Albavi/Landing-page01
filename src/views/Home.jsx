@@ -5,7 +5,6 @@ import About from '../views/About'
 import Card from '../components/Card'
 import person from '../img/person.jpg'
 
-const src = 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14403.811456746424!2d-57.5665432!3d-25.5066185!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945c559aa4443f67%3A0x52f88c1227f63e4c!2sLG%20Fitness%20Gym!5e0!3m2!1ses-419!2spy!4v1699558411546!5m2!1ses-419!2spy'
 
 function Home() {
   const [count, setCount] = useState(0)
@@ -37,12 +36,6 @@ function Home() {
 
       <article className='lg:p-12'>
         <h1 className='text-center'>UBICACION</h1>
-        <iframe src={src}
-          className='w-full h-96 sm:h-[340px] sm:max-w-7xl m-auto sm:block sm:p-0'
-          allowFullScreen="" loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade">
-        </iframe>
-
       </article>
 
 

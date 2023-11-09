@@ -47,7 +47,7 @@ function Header() {
                             <li className='hover:underline hover:underline-offset-8 '><Link to={'/'}>Inicio</Link></li>
                             <li className='hover:underline hover:underline-offset-8 '><Link to={'/about'}>Quienes somos</Link></li>
                             <li className='hover:underline hover:underline-offset-8 '><Link to={'/servicios'}>Servicios</Link></li>
-                            <li className='hover:underline hover:underline-offset-8 '><Link to={'/about'}>Contacto</Link></li>
+                            <li className='hover:underline hover:underline-offset-8 '><Link to={'/contacto'}>Contacto</Link></li>
                         </ul>
 
                         <aside className='lg:flex gap-2 justify-center hidden'>
