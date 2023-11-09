@@ -19,7 +19,7 @@ function Home() {
       <article>
       </article>
 
-      <section className='max-w-7xl m-auto'>
+      <section className='max-w-7xl m-auto md:py-16'>
         <h1 class="acheuno" className="font-bold text-center text-xl m-6">Instructores</h1>
 
         <article className='flex xl:gap-10 flex-wrap justify-center gap-5 px-5'>
@@ -34,9 +34,7 @@ function Home() {
 
       </section>
 
-      <article className='lg:p-12'>
-        <h1 className='text-center'>UBICACION</h1>
-      </article>
+
 
 
       <Routes>

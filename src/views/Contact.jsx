@@ -8,7 +8,7 @@ function Contact() {
         <main className='w-screen text-black overflow-hidden md:pb-20'>
 
 
-            <section className='max-w-7xl m-auto md:flex md:gap-5 md:border h-[600px] md:items-center mt-10 xl:mt-20'>
+            <section className='max-w-7xl m-auto md:flex md:gap-5 md:border h-[600px] md:items-center mt-10 xl:mt-20 rounded-none md:rounded-l-lg'>
 
                 <aside className='m-5 p-5'>
                     <h1 className='text-3xl font-bold text-center mb-5 md:mb-10'>Contacto</h1>
