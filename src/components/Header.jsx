@@ -35,7 +35,7 @@ function Header() {
                 </aside>
 
 
-                <aside className='sm:flex lg:gap-16 items-center justify-between'>
+                <aside className='sm:flex lg:gap-16 items-center justify-between md:justify-start'>
 
                     <div>
                         <img className='w-20 h-20 hidden lg:block' src={lg} alt="lg fitness logo" />
