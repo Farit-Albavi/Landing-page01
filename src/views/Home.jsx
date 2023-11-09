@@ -39,15 +39,8 @@ function Home() {
 
 
       <article>
-        <h1 className='text-center p-12 '>MARCAS QUE CONFIAN EN NOSOTROS</h1>
-        <div className='flex gap-1 flex-wrap justify-center'>
-          <img src="" alt="" className='w-40 h-40 bg-black' />
-          <img src="" alt="" className='w-40 h-40 bg-black' />
-          <img src="" alt="" className='w-40 h-40 bg-black' />
-          <img src="" alt="" className='w-40 h-40 bg-black' />
-          <img src="" alt="" className='w-40 h-40 bg-black' />
-          <img src="" alt="" className='w-40 h-40 bg-black' />
-        </div>
+        <h1 className='text-center p-12 '>UBICACION</h1>
+
 
       </article>
 
