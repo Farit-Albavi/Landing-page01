@@ -6,9 +6,10 @@ const src = 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14403.81145674
 function Contact() {
     return (
         <main className='w-screen text-black overflow-hidden md:pb-20'>
+            
             <h1 className='text-3xl font-bold text-center my-5 md:my-10'>Contacto</h1>
 
-            <section className='max-w-7xl m-auto md:flex md:gap-5 border h-[600px] md:items-center'>
+            <section className='max-w-7xl m-auto md:flex md:gap-5 md:border h-[600px] md:items-center'>
 
                 <aside className='m-5 p-5'>
                     <div className='flex gap-5 items-center'>
