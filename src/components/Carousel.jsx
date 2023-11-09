@@ -1,18 +1,23 @@
 import React, { useState } from 'react'
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs'
 import { RxDotFilled } from 'react-icons/rx'
+import slide1 from '../img/slide1.jpg'
+import slide2 from '../img/slide2.jpg'
+import slide3 from '../img/slide3.jpg'
+import slide4 from '../img/slide4.jpg'
+
 
 function Carousel() {
 
     const slides = [
         {
-            url: 'https://images.unsplash.com/photo-1493612276216-ee3925520721?auto=format&fit=crop&q=80&w=1964&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+            url: slide1
         }, {
-            url: 'https://images.unsplash.com/photo-1512295767273-ac109ac3acfa?auto=format&fit=crop&q=80&w=1935&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+            url: slide2
         }, {
-            url: 'https://images.unsplash.com/photo-1487014679447-9f8336841d58?auto=format&fit=crop&q=80&w=1905&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+            url: slide3
         }, {
-            url: 'https://images.unsplash.com/photo-1493612276216-ee3925520721?auto=format&fit=crop&q=80&w=1964&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+            url: slide4
         },
     ];
 
@@ -34,8 +39,8 @@ function Carousel() {
     }
 
     return (
-        <div className='w-screen xl:w-[1440px] xl:h-[820px] h-[400px] m-auto relative'>
-            <div style={{ backgroundImage: `url(${slides[currentIndex].url})` }} className='w-full h-full xl:rounded-2xl bg-center bg-cover duration-500'>
+        <div className='w-screen xl:w-screen xl:h-[1080px] h-[400px] m-auto relative'>
+            <div style={{ backgroundImage: `url(${slides[currentIndex].url})` }} className='w-full h-full xl:rounded-2xls bg-center bg-cover duration-500'>
 
 
                 {/* Left arrow */}
@@ -54,7 +59,7 @@ function Carousel() {
                         <div key={slideIndex}
                             onClick={() => goToSlide(slideIndex)}
                             className='text-2xl cursor-pointer '>
-                            <RxDotFilled color='black'/>
+                            <RxDotFilled color='black' />
                         </div>
                     ))}
                 </div>
