@@ -5,12 +5,12 @@ const src = 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14403.81145674
 
 function Contact() {
     return (
-        <main className='w-screen text-black overflow-hidden'>
-            <h1 className='text-3xl font-bold text-center mt-10'>Contacto</h1>
-            <section className=' max-w-5xl m-auto'>
+        <main className='w-screen text-black overflow-hidden md:pb-20'>
+            <h1 className='text-3xl font-bold text-center my-5 md:my-10'>Contacto</h1>
 
+            <section className='max-w-7xl m-auto md:flex md:gap-5 border h-[600px] md:items-center'>
 
-                <aside className='m-5 p-5 '>
+                <aside className='m-5 p-5'>
                     <div className='flex gap-5 items-center'>
                         <svg class="w-6 h-6 text-gray-800 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
                             <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z" />
@@ -40,9 +40,9 @@ function Contact() {
                     </div>
                 </aside>
 
-                <aside>
+                <aside className='h-full'>
                     <iframe src={src}
-                        className='w-full h-96 sm:h-[340px] sm:max-w-7xl m-auto sm:block sm:p-0'
+                        className='w-full h-96 sm:h-full sm:w-[840px] m-auto sm:block sm:p-0'
                         allowFullScreen="" loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade">
                     </iframe>
