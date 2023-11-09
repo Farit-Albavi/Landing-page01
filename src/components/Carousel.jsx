@@ -39,8 +39,8 @@ function Carousel() {
     }
 
     return (
-        <div className='w-screen xl:w-screen xl:h-[1080px] h-[400px] m-auto relative'>
-            <div style={{ backgroundImage: `url(${slides[currentIndex].url})` }} className='w-full h-full xl:rounded-2xls bg-center bg-cover duration-500'>
+        <div className='w-screen xl:w-screen xl:h-[540px] h-[400px] m-auto relative'>
+            <div style={{ backgroundImage: `url(${slides[currentIndex].url})` }} className='w-full h-full xl:rounded-2xls bg-center bg-cover duration-500 '>
 
 
                 {/* Left arrow */}

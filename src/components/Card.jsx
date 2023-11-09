@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Card({ img, name }) {
+function Card({ img, name, descript }) {
     return (
 
         <div class="max-w-sm bg-white  rounded-lg shadow dark:bg-gray-800 ">
@@ -9,7 +9,17 @@ function Card({ img, name }) {
                 <a href="#">
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{name}</h5>
                 </a>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                <div>
+                    <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                        {descript}
+                    </p>
+                    <ul className="mb-3 font-normal text-gray-700 dark:text-gray-400 list-disc list-inside">
+                        <li>Entrenador personal</li>
+                        <li>Profesor</li>
+                        <li>Culturista</li>
+                    </ul>
+                </div>
+
             </div>
         </div>
     )

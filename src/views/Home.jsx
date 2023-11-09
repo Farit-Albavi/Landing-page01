@@ -5,11 +5,8 @@ import About from '../views/About'
 import Card from '../components/Card'
 
 
-
 function Home() {
   const [count, setCount] = useState(0)
-
-
 
   return (
 
@@ -26,17 +23,15 @@ function Home() {
 
         <article className='flex xl:gap-10 flex-wrap justify-center gap-5 px-5'>
           <Card img={'https://images.unsplash.com/photo-1481349518771-20055b2a7b24?auto=format&fit=crop&q=80&w=2139&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'}
-            name={'Fred'} />
+            name={'Arnaldo A.'} descript={'Entrena con Arnaldo A. desde las 12:00hs'} />
           <Card img={'https://images.unsplash.com/photo-1481349518771-20055b2a7b24?auto=format&fit=crop&q=80&w=2139&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'}
-            name={'Fred'} />
+            name={'violeta Samaniego'} descript={'Entrena con Violeta apartir de las 6:00hs'} />
           <Card img={'https://images.unsplash.com/photo-1481349518771-20055b2a7b24?auto=format&fit=crop&q=80&w=2139&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'}
-            name={'Fred'} />
+            name={'Sol Cardozo'} descript={'Entrena con Sol apartir de las 21:00hs'} />
 
         </article>
 
       </section>
-
-
 
       <article>
         <h1 className='text-center p-12 '>UBICACION</h1>
