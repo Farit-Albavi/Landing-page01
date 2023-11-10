@@ -11,13 +11,20 @@ function Carousel() {
 
     const slides = [
         {
-            url: slide1
-        }, {
-            url: slide2
-        }, {
-            url: slide3
-        }, {
-            url: slide4
+            url: slide1,
+            key: 'slide-1',
+        },
+        {
+            url: slide2,
+            key: 'slide-2',
+        },
+        {
+            url: slide3,
+            key: 'slide-3',
+        },
+        {
+            url: slide4,
+            key: 'slide-4',
         },
     ];
 
@@ -40,7 +47,7 @@ function Carousel() {
         if (currentIndex < slides.length) {
             nextSlide();
         }
-    }, 5000 );
+    }, 5000);
 
     return (
         <div className='w-screen xl:w-screen xl:h-[540px] h-[400px] m-auto relative'>
