@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs'
 import { RxDotFilled } from 'react-icons/rx'
 import slide1 from '../img/slide1.jpg'
@@ -21,6 +21,7 @@ function Carousel() {
         },
     ];
 
+
     const [currentIndex, setCurrentIndex] = useState(0)
 
     const prevSlide = () => {
@@ -33,6 +34,11 @@ function Carousel() {
         const newIndex = isLastSlide ? 0 : currentIndex + 1
         setCurrentIndex(newIndex)
     }
+
+
+    setInterval(() => {
+        nextSlide();
+    }, 9000);
 
     return (
         <div className='w-screen xl:w-screen xl:h-[540px] h-[400px] m-auto relative'>
