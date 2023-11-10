@@ -19,11 +19,17 @@ function Header() {
     return (
         <nav className='bg-black p-5 flex-row-reverse gap-5 sm:flex-row sm:justify-between text-white'>
 
-            <div className='container'>
+
+
+            {/* Movile header config */}
+
+            <div className='container w-full m-auto'>
 
                 <aside className='flex flex-row-reverse justify-between items-center lg:flex-row '>
+                    <div>
+                        <img className='w-12 h-12 lg:hidden' src={lg} alt="lg fitness logo" />
+                    </div>
 
-                    <img className='w-12 h-12 lg:hidden' src={lg} alt="lg fitness logo" />
 
                     <button onClick={openMenu} data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
                         <span className="sr-only">Open main menu</span>
@@ -35,7 +41,9 @@ function Header() {
                 </aside>
 
 
-                <aside className='sm:flex lg:gap-16 items-center justify-between md:justify-start'>
+                {/* Desktop header config */}
+
+                <aside className='sm:flex lg:gap-16 items-center justify-between md:justify-between'>
 
                     <div>
                         <img className='w-20 h-20 hidden lg:block' src={lg} alt="lg fitness logo" />
@@ -49,12 +57,6 @@ function Header() {
                             <li className='hover:underline hover:underline-offset-8 '><Link to={'/servicios'}>Servicios</Link></li>
                             <li className='hover:underline hover:underline-offset-8 '><Link to={'/contacto'}>Contacto</Link></li>
                         </ul>
-
-                        <aside className='lg:flex gap-2 justify-center hidden'>
-                            <div className='w-8 h-8 rounded-full bg-transparent border border-black'></div>
-                            <div className='w-8 h-8 rounded-full bg-black'></div>
-                            <div className='w-8 h-8 rounded-full bg-black'></div>
-                        </aside>
                     </div>
 
                 </aside>

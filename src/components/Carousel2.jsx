@@ -9,7 +9,7 @@ import slide4 from '../img/slide4.jpg'
 
 function Carousel2() {
     return (
-        <Carousel prevArrow={false} nextArrow={false}  loop autoplay autoplayDelay={5000} className="h-[400px] xl:h-[600px]">
+        <Carousel prevArrow={false} nextArrow={false} loop autoplay autoplayDelay={5000} className="h-[400px] xl:h-[500px]">
             <img
                 src={slide1}
                 alt="image 1"
@@ -22,6 +22,11 @@ function Carousel2() {
             />
             <img
                 src={slide3}
+                alt="image 3"
+                className="h-full w-full object-cover"
+            />
+            <img
+                src={slide4}
                 alt="image 3"
                 className="h-full w-full object-cover"
             />
