@@ -37,8 +37,10 @@ function Carousel() {
 
 
     setInterval(() => {
-        nextSlide();
-    }, 9000);
+        if (currentIndex < slides.length) {
+            nextSlide();
+        }
+    }, 5000 );
 
     return (
         <div className='w-screen xl:w-screen xl:h-[540px] h-[400px] m-auto relative'>
@@ -46,14 +48,14 @@ function Carousel() {
 
 
                 {/* Left arrow */}
-                <div className='absolute top-[50%] -translate-x-0 translate-y-[-50%] left-2 xl:left-10 rounded-full p-2 bg-black/20 xl:hover:bg-black/50 text-white cursor-pointer'>
+                {/* <div className='absolute top-[50%] -translate-x-0 translate-y-[-50%] left-2 xl:left-10 rounded-full p-2 bg-black/20 xl:hover:bg-black/50 text-white cursor-pointer'>
                     <BsChevronCompactLeft onClick={prevSlide} size={30}  ></BsChevronCompactLeft>
-                </div >
+                </div > */}
                 {/* Right arrow */}
 
-                <div className='absolute top-[50%] -translate-x-0 translate-y-[-50%] right-2 xl:right-10 rounded-full p-2 bg-black/20 xl:hover:bg-black/50 text-white cursor-pointer'>
+                {/* <div className='absolute top-[50%] -translate-x-0 translate-y-[-50%] right-2 xl:right-10 rounded-full p-2 bg-black/20 xl:hover:bg-black/50 text-white cursor-pointer'>
                     <BsChevronCompactRight onClick={nextSlide} size={30} ></BsChevronCompactRight>
-                </div >
+                </div > */}
 
             </div>
 
