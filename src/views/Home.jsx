@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom'
 import About from '../views/About'
 import Card from '../components/Card'
 import person from '../img/person.jpg'
+import Carousel2 from '../components/Carousel2'
 
 
 function Home() {
@@ -13,7 +14,7 @@ function Home() {
 
     <>
       <article className='overflow-hidden'>
-        <Carousel />
+        <Carousel2></Carousel2>
       </article>
 
       <article>
