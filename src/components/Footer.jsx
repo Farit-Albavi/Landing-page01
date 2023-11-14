@@ -1,5 +1,11 @@
 import React from 'react'
 import lg from '../img/lg.jpg'
+import { FaFacebookF } from "react-icons/fa";
+import { CiInstagram } from "react-icons/ci";
+import { FaWhatsapp } from "react-icons/fa";
+
+
+
 
 function Footer() {
     return (
@@ -11,17 +17,20 @@ function Footer() {
                         <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">FITNESS GYM</span>
                     </a>
                     <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
-                        <li>
-                            <a href="#" class="mr-4 hover:underline md:mr-6 ">About</a>
+                        <li className='mr-4 hover:underline md:mr-6 '>
+                            <a href="https://www.facebook.com/lgfitnessgym" target='_blank'>
+                                <FaFacebookF size={19} />
+                            </a>
                         </li>
-                        <li>
-                            <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+                        <li className='mr-4 hover:underline md:mr-6 '>
+                            <a href="https://www.instagram.com/lgfitnessgym/?hl=es" target='_blank'>
+                                <CiInstagram size={25} />   
+                            </a>
                         </li>
-                        <li>
-                            <a href="#" class="mr-4 hover:underline md:mr-6 ">Licensing</a>
-                        </li>
-                        <li>
-                            <a href="#" class="hover:underline">Contact</a>
+                        <li className='mr-4 hover:underline md:mr-6 '>
+                            <a href="https://api.whatsapp.com/send?phone=595992382082" target='_blank'>
+                                <FaWhatsapp size={24} />
+                            </a>
                         </li>
                     </ul>
                 </div>

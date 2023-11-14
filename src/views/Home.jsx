@@ -13,7 +13,7 @@ function Home() {
   return (
 
     <>
-      <article className='overflow-hidden'>
+      <article className='overflow-hidden h-screen'>
         <Carousel2></Carousel2>
       </article>
 
